@@ -1,0 +1,20 @@
+trigger:
+- main
+
+pool:
+  # vmImage: 'ubuntu-latest'
+  name: 'azure-vmss'
+
+jobs:  
+- job: Job1
+  steps:
+  - script: echo Hello, $HOSTNAME
+- job: Job2
+  steps:
+  - script: echo Hello, $HOSTNAME
+- job: Job3
+  steps:
+  - script: echo Hello, $HOSTNAME
+- job: Job4
+  steps:
+  - script: echo Hello, $HOSTNAME
